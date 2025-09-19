@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\dllmain.cpp" />
+    <ClCompile Include="..\nbis\commonnbis\src\lib\ioutil\dataio.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\ioutil\filesize.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\util\computil.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\util\ssxstats.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\util\fatalerr.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\util\syserr.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\util\memalloc.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\cblas\sgemv.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\cblas\lsame.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\cblas\sgemm.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\cblas\xerbla.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\cblas\sscal.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\cblas\saxpy.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\cblas\sdot.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\cblas\snrm2.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="lib">
+      <UniqueIdentifier>{baa0b189-3247-432e-b729-c42ea178e339}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,762 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      The system is: Linux - 5.15.167.4-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:15 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-bfSx1x"
+      binary: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-bfSx1x"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-bfSx1x'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_11850/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_11850.dir/build.make CMakeFiles/cmTC_11850.dir/build
+        gmake[1]: Entering directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-bfSx1x'
+        Building C object CMakeFiles/cmTC_11850.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_11850.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_11850.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_11850.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_11850.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccS6HnLt.s
+        GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 38987c28e967c64056a6454abdef726e
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_11850.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_11850.dir/'
+         as -v --64 -o CMakeFiles/cmTC_11850.dir/CMakeCCompilerABI.c.o /tmp/ccS6HnLt.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_11850.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_11850.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_11850
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11850.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_11850.dir/CMakeCCompilerABI.c.o -o cmTC_11850 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_11850' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_11850.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRLPHBb.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_11850 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_11850.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_11850' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_11850.'
+        gmake[1]: Leaving directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-bfSx1x'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-bfSx1x']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_11850/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_11850.dir/build.make CMakeFiles/cmTC_11850.dir/build]
+        ignore line: [gmake[1]: Entering directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-bfSx1x']
+        ignore line: [Building C object CMakeFiles/cmTC_11850.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_11850.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_11850.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_11850.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_11850.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccS6HnLt.s]
+        ignore line: [GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 38987c28e967c64056a6454abdef726e]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_11850.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_11850.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_11850.dir/CMakeCCompilerABI.c.o /tmp/ccS6HnLt.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_11850.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_11850.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_11850]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11850.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_11850.dir/CMakeCCompilerABI.c.o -o cmTC_11850 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_11850' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_11850.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRLPHBb.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_11850 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_11850.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccRLPHBb.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_11850] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_11850.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:35 (check_function_exists)"
+      - "CMakeLists.txt:108 (generate_config_file)"
+    checks:
+      - "Looking for clock_gettime"
+    directories:
+      source: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-3ETo5p"
+      binary: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-3ETo5p"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_CLOCK_GETTIME"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-3ETo5p'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_65a4d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_65a4d.dir/build.make CMakeFiles/cmTC_65a4d.dir/build
+        gmake[1]: Entering directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-3ETo5p'
+        Building C object CMakeFiles/cmTC_65a4d.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=clock_gettime -o CMakeFiles/cmTC_65a4d.dir/CheckFunctionExists.c.o -c /mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-3ETo5p/CheckFunctionExists.c
+        Linking C executable cmTC_65a4d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65a4d.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=clock_gettime CMakeFiles/cmTC_65a4d.dir/CheckFunctionExists.c.o -o cmTC_65a4d 
+        gmake[1]: Leaving directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-3ETo5p'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:36 (check_function_exists)"
+      - "CMakeLists.txt:108 (generate_config_file)"
+    checks:
+      - "Looking for pthread_condattr_setclock"
+    directories:
+      source: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-sHGBRW"
+      binary: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-sHGBRW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_PTHREAD_CONDATTR_SETCLOCK"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-sHGBRW'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_298fa/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_298fa.dir/build.make CMakeFiles/cmTC_298fa.dir/build
+        gmake[1]: Entering directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-sHGBRW'
+        Building C object CMakeFiles/cmTC_298fa.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_condattr_setclock -o CMakeFiles/cmTC_298fa.dir/CheckFunctionExists.c.o -c /mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-sHGBRW/CheckFunctionExists.c
+        Linking C executable cmTC_298fa
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_298fa.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_condattr_setclock CMakeFiles/cmTC_298fa.dir/CheckFunctionExists.c.o -o cmTC_298fa 
+        gmake[1]: Leaving directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-sHGBRW'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:37 (check_function_exists)"
+      - "CMakeLists.txt:108 (generate_config_file)"
+    checks:
+      - "Looking for pthread_setname_np"
+    directories:
+      source: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-ZC07hV"
+      binary: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-ZC07hV"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_PTHREAD_SETNAME_NP"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-ZC07hV'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4368e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4368e.dir/build.make CMakeFiles/cmTC_4368e.dir/build
+        gmake[1]: Entering directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-ZC07hV'
+        Building C object CMakeFiles/cmTC_4368e.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_setname_np -o CMakeFiles/cmTC_4368e.dir/CheckFunctionExists.c.o -c /mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-ZC07hV/CheckFunctionExists.c
+        Linking C executable cmTC_4368e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4368e.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_setname_np CMakeFiles/cmTC_4368e.dir/CheckFunctionExists.c.o -o cmTC_4368e 
+        gmake[1]: Leaving directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-ZC07hV'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:38 (check_function_exists)"
+      - "CMakeLists.txt:108 (generate_config_file)"
+    checks:
+      - "Looking for pthread_threadid_np"
+    directories:
+      source: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-LTjfHo"
+      binary: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-LTjfHo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_PTHREAD_THREADID_NP"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-LTjfHo'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c12ed/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c12ed.dir/build.make CMakeFiles/cmTC_c12ed.dir/build
+        gmake[1]: Entering directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-LTjfHo'
+        Building C object CMakeFiles/cmTC_c12ed.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_threadid_np -o CMakeFiles/cmTC_c12ed.dir/CheckFunctionExists.c.o -c /mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-LTjfHo/CheckFunctionExists.c
+        Linking C executable cmTC_c12ed
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c12ed.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_threadid_np CMakeFiles/cmTC_c12ed.dir/CheckFunctionExists.c.o -o cmTC_c12ed 
+        /usr/bin/ld: CMakeFiles/cmTC_c12ed.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x14): undefined reference to `pthread_threadid_np'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_c12ed.dir/build.make:99: cmTC_c12ed] Error 1
+        gmake[1]: Leaving directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-LTjfHo'
+        gmake: *** [Makefile:127: cmTC_c12ed/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:39 (check_function_exists)"
+      - "CMakeLists.txt:108 (generate_config_file)"
+    checks:
+      - "Looking for eventfd"
+    directories:
+      source: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-n25Db3"
+      binary: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-n25Db3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_EVENTFD"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-n25Db3'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9e6c4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9e6c4.dir/build.make CMakeFiles/cmTC_9e6c4.dir/build
+        gmake[1]: Entering directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-n25Db3'
+        Building C object CMakeFiles/cmTC_9e6c4.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=eventfd -o CMakeFiles/cmTC_9e6c4.dir/CheckFunctionExists.c.o -c /mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-n25Db3/CheckFunctionExists.c
+        Linking C executable cmTC_9e6c4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e6c4.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=eventfd CMakeFiles/cmTC_9e6c4.dir/CheckFunctionExists.c.o -o cmTC_9e6c4 
+        gmake[1]: Leaving directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-n25Db3'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:40 (check_function_exists)"
+      - "CMakeLists.txt:108 (generate_config_file)"
+    checks:
+      - "Looking for pipe2"
+    directories:
+      source: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-os5d0J"
+      binary: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-os5d0J"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_PIPE2"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-os5d0J'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ecca0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ecca0.dir/build.make CMakeFiles/cmTC_ecca0.dir/build
+        gmake[1]: Entering directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-os5d0J'
+        Building C object CMakeFiles/cmTC_ecca0.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pipe2 -o CMakeFiles/cmTC_ecca0.dir/CheckFunctionExists.c.o -c /mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-os5d0J/CheckFunctionExists.c
+        Linking C executable cmTC_ecca0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecca0.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pipe2 CMakeFiles/cmTC_ecca0.dir/CheckFunctionExists.c.o -o cmTC_ecca0 
+        gmake[1]: Leaving directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-os5d0J'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:41 (check_function_exists)"
+      - "CMakeLists.txt:108 (generate_config_file)"
+    checks:
+      - "Looking for syslog"
+    directories:
+      source: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-IbSaf1"
+      binary: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-IbSaf1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYSLOG"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-IbSaf1'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4c9ba/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4c9ba.dir/build.make CMakeFiles/cmTC_4c9ba.dir/build
+        gmake[1]: Entering directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-IbSaf1'
+        Building C object CMakeFiles/cmTC_4c9ba.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=syslog -o CMakeFiles/cmTC_4c9ba.dir/CheckFunctionExists.c.o -c /mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-IbSaf1/CheckFunctionExists.c
+        Linking C executable cmTC_4c9ba
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c9ba.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=syslog CMakeFiles/cmTC_4c9ba.dir/CheckFunctionExists.c.o -o cmTC_4c9ba 
+        gmake[1]: Leaving directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-IbSaf1'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:43 (check_include_files)"
+      - "CMakeLists.txt:108 (generate_config_file)"
+    checks:
+      - "Looking for include file asm/types.h"
+    directories:
+      source: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-VnAOoW"
+      binary: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-VnAOoW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_ASM_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-VnAOoW'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1576e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1576e.dir/build.make CMakeFiles/cmTC_1576e.dir/build
+        gmake[1]: Entering directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-VnAOoW'
+        Building C object CMakeFiles/cmTC_1576e.dir/HAVE_ASM_TYPES_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_1576e.dir/HAVE_ASM_TYPES_H.c.o -c /mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-VnAOoW/HAVE_ASM_TYPES_H.c
+        Linking C executable cmTC_1576e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1576e.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_1576e.dir/HAVE_ASM_TYPES_H.c.o -o cmTC_1576e 
+        gmake[1]: Leaving directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-VnAOoW'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:45 (check_include_files)"
+      - "CMakeLists.txt:108 (generate_config_file)"
+    checks:
+      - "Looking for include file string.h"
+    directories:
+      source: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-hfkIq5"
+      binary: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-hfkIq5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STRING_H"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-hfkIq5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6473a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6473a.dir/build.make CMakeFiles/cmTC_6473a.dir/build
+        gmake[1]: Entering directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-hfkIq5'
+        Building C object CMakeFiles/cmTC_6473a.dir/HAVE_STRING_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_6473a.dir/HAVE_STRING_H.c.o -c /mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-hfkIq5/HAVE_STRING_H.c
+        Linking C executable cmTC_6473a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6473a.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_6473a.dir/HAVE_STRING_H.c.o -o cmTC_6473a 
+        gmake[1]: Leaving directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-hfkIq5'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:46 (check_include_files)"
+      - "CMakeLists.txt:108 (generate_config_file)"
+    checks:
+      - "Looking for include file sys/time.h"
+    directories:
+      source: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-CDDFVO"
+      binary: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-CDDFVO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYS_TIME_H"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-CDDFVO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fe8d9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fe8d9.dir/build.make CMakeFiles/cmTC_fe8d9.dir/build
+        gmake[1]: Entering directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-CDDFVO'
+        Building C object CMakeFiles/cmTC_fe8d9.dir/HAVE_SYS_TIME_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_fe8d9.dir/HAVE_SYS_TIME_H.c.o -c /mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-CDDFVO/HAVE_SYS_TIME_H.c
+        Linking C executable cmTC_fe8d9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe8d9.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_fe8d9.dir/HAVE_SYS_TIME_H.c.o -o cmTC_fe8d9 
+        gmake[1]: Leaving directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-CDDFVO'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:48 (check_symbol_exists)"
+      - "CMakeLists.txt:108 (generate_config_file)"
+    checks:
+      - "Looking for timerfd_create"
+    directories:
+      source: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-bsjzwA"
+      binary: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-bsjzwA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_TIMERFD"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-bsjzwA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7e386/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7e386.dir/build.make CMakeFiles/cmTC_7e386.dir/build
+        gmake[1]: Entering directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-bsjzwA'
+        Building C object CMakeFiles/cmTC_7e386.dir/CheckSymbolExists.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_7e386.dir/CheckSymbolExists.c.o -c /mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-bsjzwA/CheckSymbolExists.c
+        Linking C executable cmTC_7e386
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e386.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_7e386.dir/CheckSymbolExists.c.o -o cmTC_7e386 
+        gmake[1]: Leaving directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-bsjzwA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:49 (check_symbol_exists)"
+      - "CMakeLists.txt:108 (generate_config_file)"
+    checks:
+      - "Looking for nfds_t"
+    directories:
+      source: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-92MnNZ"
+      binary: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-92MnNZ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_NFDS_T"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-92MnNZ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_23041/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_23041.dir/build.make CMakeFiles/cmTC_23041.dir/build
+        gmake[1]: Entering directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-92MnNZ'
+        Building C object CMakeFiles/cmTC_23041.dir/CheckSymbolExists.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_23041.dir/CheckSymbolExists.c.o -c /mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-92MnNZ/CheckSymbolExists.c
+        /mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-92MnNZ/CheckSymbolExists.c: In function ‘main’:
+        /mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-92MnNZ/CheckSymbolExists.c:8:19: error: expected expression before ‘nfds_t’
+            8 |   return ((int*)(&nfds_t))[argc];
+              |                   ^~~~~~
+        gmake[1]: *** [CMakeFiles/cmTC_23041.dir/build.make:78: CMakeFiles/cmTC_23041.dir/CheckSymbolExists.c.o] Error 1
+        gmake[1]: Leaving directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-92MnNZ'
+        gmake: *** [Makefile:127: cmTC_23041/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckStructHasMember.cmake:77 (CHECK_SOURCE_COMPILES)"
+      - "CMakeLists.txt:51 (check_struct_has_member)"
+      - "CMakeLists.txt:108 (generate_config_file)"
+    checks:
+      - "Performing Test HAVE_STRUCT_TIMESPEC"
+    directories:
+      source: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-cjiLwk"
+      binary: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-cjiLwk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STRUCT_TIMESPEC"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-cjiLwk'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_db7ff/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_db7ff.dir/build.make CMakeFiles/cmTC_db7ff.dir/build
+        gmake[1]: Entering directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-cjiLwk'
+        Building C object CMakeFiles/cmTC_db7ff.dir/src.c.o
+        /usr/bin/cc -DHAVE_STRUCT_TIMESPEC   -o CMakeFiles/cmTC_db7ff.dir/src.c.o -c /mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-cjiLwk/src.c
+        Linking C executable cmTC_db7ff
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db7ff.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_db7ff.dir/src.c.o -o cmTC_db7ff 
+        gmake[1]: Leaving directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-cjiLwk'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:74 (check_c_compiler_flag)"
+      - "CMakeLists.txt:108 (generate_config_file)"
+    checks:
+      - "Performing Test HAVE_VISIBILITY"
+    directories:
+      source: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-XJRbdG"
+      binary: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-XJRbdG"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-XJRbdG'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_07a54/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_07a54.dir/build.make CMakeFiles/cmTC_07a54.dir/build
+        gmake[1]: Entering directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-XJRbdG'
+        Building C object CMakeFiles/cmTC_07a54.dir/src.c.o
+        /usr/bin/cc -DHAVE_VISIBILITY  -fvisibility=hidden -o CMakeFiles/cmTC_07a54.dir/src.c.o -c /mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-XJRbdG/src.c
+        Linking C executable cmTC_07a54
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07a54.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_07a54.dir/src.c.o -o cmTC_07a54 
+        gmake[1]: Leaving directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-XJRbdG'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:187 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-RhT2QV"
+      binary: "/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-RhT2QV"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-RhT2QV'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_188ae/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_188ae.dir/build.make CMakeFiles/cmTC_188ae.dir/build
+        gmake[1]: Entering directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-RhT2QV'
+        Building C object CMakeFiles/cmTC_188ae.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_188ae.dir/src.c.o -c /mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-RhT2QV/src.c
+        Linking C executable cmTC_188ae
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_188ae.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_188ae.dir/src.c.o -o cmTC_188ae 
+        gmake[1]: Leaving directory '/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/CMakeScratch/TryCompile-RhT2QV'
+        
+      exitCode: 0
+...

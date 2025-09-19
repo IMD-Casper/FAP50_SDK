@@ -1,0 +1,7 @@
+/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/usb-1.0.dir
+/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/edit_cache.dir
+/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/rebuild_cache.dir
+/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/list_install_components.dir
+/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/install.dir
+/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/install/local.dir
+/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/CMakeFiles/install/strip.dir

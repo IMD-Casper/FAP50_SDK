@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="lib_nbis_android.cpp" />
+    <ClCompile Include="..\dllmain.cpp" />
+    <ClCompile Include="..\nbis\commonnbis\src\lib\util\computil.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\util\fatalerr.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\util\memalloc.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\util\ssxstats.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\util\syserr.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\ioutil\dataio.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\ioutil\filesize.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\cblas\lsame.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\cblas\saxpy.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\cblas\sdot.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\cblas\sgemm.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\cblas\sgemv.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\cblas\snrm2.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\cblas\sscal.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nbis\commonnbis\src\lib\cblas\xerbla.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lib_nbis_android.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="lib">
+      <UniqueIdentifier>{27a70c4d-fe22-468d-8a85-1a788df31804}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

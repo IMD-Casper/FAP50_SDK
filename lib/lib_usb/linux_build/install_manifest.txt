@@ -1,0 +1,2 @@
+/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/../linux_build/lib/libusb-1.0.a
+/mnt/d/SVN/PCTool/imd_fap50_sdk/trunk3/lib/lib_usb/linux_build/../linux_build/include/libusb-1.0/libusb.h

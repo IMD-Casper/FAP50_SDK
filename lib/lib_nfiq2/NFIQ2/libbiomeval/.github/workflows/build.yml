@@ -1,0 +1,180 @@
+name: Build Library and Tests
+
+on:
+  pull_request:
+    paths-ignore:
+      - '.gitignore'
+      - '**.md'
+      - 'src/test/test_data/**'
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - '.gitignore'
+      - '**.md'
+      - 'src/test/test_data/**'
+
+env:
+  CONFIGURATION: Release
+  BUILD_BIOMEVAL_TESTS: ON
+  BUILD_BIOMEVAL_32BIT: OFF
+
+jobs:
+  build:
+    name: Build Matrix
+
+    runs-on: ${{ matrix.config.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+          - { os: macOS-12, arch: x64, shared: ON, force-static-deps: OFF }
+          - { os: macOS-11, arch: x64, shared: ON, force-static-deps: OFF }
+          - { os: ubuntu-22.04, arch: x64, shared: ON, force-static-deps: OFF }
+          - { os: ubuntu-22.04, arch: x64, shared: OFF, force-static-deps: OFF }
+          - { os: ubuntu-20.04, arch: x64, shared: ON, force-static-deps: OFF }
+          - { os: ubuntu-20.04, arch: x64, shared: OFF, force-static-deps: OFF }
+          - { os: windows-2022, arch: x64, shared: OFF, force-static-deps: OFF }
+          - { os: windows-2019, arch: x64, shared: OFF, force-static-deps: OFF }
+          - { os: windows-2019, arch: x64, shared: ON, force-static-deps: OFF }
+          - { os: windows-2019, arch: x86, shared: ON, force-static-deps: OFF }
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+      with:
+        submodules: false
+
+    # The Mono framework on macOS GitHub Runners provides some really old and
+    # conflicting libraries at high precedence, so remove it.
+    - name: Remove Mono Framework (macOS)
+      if: ${{ runner.os == 'macOS' }}
+      shell: bash
+      run: sudo rm -rf /Library/Frameworks/Mono.framework
+
+    - name: Prepare for Package Cache (Windows)
+      if: ${{ runner.os == 'Windows' }}
+      shell: bash
+      run: |
+        mkdir -p ${VCPKG_INSTALLATION_ROOT}/bincache
+        echo "VCPKG_DEFAULT_BINARY_CACHE=${VCPKG_INSTALLATION_ROOT}/bincache" >> ${GITHUB_ENV}
+
+    - name: Package Cache (Windows)
+      if: ${{ runner.os == 'Windows' }}
+      id: vcpkg-cache
+      uses: actions/cache@v3
+      with:
+        path: ${{ env.VCPKG_DEFAULT_BINARY_CACHE }}
+        key: ${{ matrix.config.os }}-${{ matrix.config.arch }}-SHARED_${{ matrix.config.shared }}-STATIC_${{ matrix.config.force-static-deps }}-vcpkg
+        restore-keys: |
+          ${{ matrix.config.os }}-${{ matrix.config.arch }}-SHARED_${{ matrix.config.shared }}-STATIC_${{ matrix.config.force-static-deps }}-vcpkg
+
+    - name: Install Packages (Linux)
+      if: ${{ runner.os == 'Linux' }}
+      shell: bash
+      run: |
+        sudo apt -y install \
+            libavcodec-dev \
+            libavformat-dev \
+            libdb++-dev \
+            libhwloc-dev \
+            libjpeg-dev \
+            libopenjp2-7-dev \
+            libopenmpi-dev \
+            libpcsclite-dev \
+            libpng-dev \
+            libsqlite3-dev \
+            libswscale-dev \
+            libssl-dev \
+            libtiff-dev \
+            zlib1g-dev
+
+    - name: Install Packages (macOS)
+      if: ${{ runner.os == 'macOS' }}
+      shell: bash
+      # FIXME: homebrew's open-mpi package doesn't include C++ bindings
+      # FIXME: we're not compatible with latest ffmpeg
+      run: |
+        brew install \
+            berkeley-db \
+            hwloc \
+            jpeg-turbo \
+            libpng \
+            libtiff \
+            openjpeg \
+            openssl \
+            sqlite \
+            zlib
+
+    - name: Install Packages (Windows)
+      if: ${{ runner.os == 'Windows' }}
+      shell: bash
+      run: |
+        vcpkg install \
+          --triplet=${{ matrix.config.arch }}-windows-static \
+          berkeleydb \
+          hwloc \
+          libjpeg-turbo \
+          liblzma \
+          libpng \
+          openjpeg \
+          openssl \
+          sqlite3 \
+          tiff \
+          zlib
+        vcpkg install --triplet=${{ matrix.config.arch }}-windows \
+          berkeleydb \
+          hwloc \
+          libjpeg-turbo \
+          liblzma \
+          libpng \
+          openjpeg \
+          openssl \
+          sqlite3 \
+          tiff \
+          zlib
+
+    - name: Create Build Directory
+      run: cmake -E make_directory ${{ github.workspace }}/build
+
+    - name: Configure CMake (Single-config Generator)
+      if: ${{ runner.os != 'Windows' }}
+      shell: bash
+      working-directory: ${{ github.workspace }}/build
+      run: |
+        cmake \
+            -DCMAKE_BUILD_TYPE="${CONFIGURATION}" \
+            -DBUILD_SHARED_LIBS="${{ matrix.config.shared }}" \
+            -DBUILD_BIOMEVAL_TESTS="${BUILD_BIOMEVAL_TESTS}" \
+            -DBUILD_BIOMEVAL_32BIT="${BUILD_BIOMEVAL_32BIT}" \
+            -DFORCE_STATIC_DEPENDENCIES="${{ matrix.config.force-static-deps }}" \
+            "${GITHUB_WORKSPACE}"
+
+    - name: Configure CMake (Multi-config Generator)
+      if: ${{ runner.os == 'Windows' }}
+      shell: bash
+      env:
+        cmake_arch_flag: ${{ matrix.config.arch == 'x86' && 'Win32' || 'x64' }}
+      working-directory: ${{ github.workspace }}\build
+      run: |
+        cmake \
+            -A ${cmake_arch_flag} \
+            -DCMAKE_TOOLCHAIN_FILE="${VCPKG_INSTALLATION_ROOT}/scripts/buildsystems/vcpkg.cmake" \
+            -DCMAKE_CONFIGURATION_TYPES="${CONFIGURATION}" \
+            -DBUILD_SHARED_LIBS="${{ matrix.config.shared }}" \
+            -DBUILD_BIOMEVAL_TESTS="${BUILD_BIOMEVAL_TESTS}" \
+            -DBUILD_BIOMEVAL_32BIT="${BUILD_BIOMEVAL_32BIT}" \
+            -DOPENSSL_ROOT_DIR="${VCPKG_INSTALLATION_ROOT}/packages/openssl_${{ matrix.config.arch }}-windows-static" \
+            "${GITHUB_WORKSPACE}"
+
+    - name: Build (Single-config Generator)
+      if: ${{ runner.os != 'Windows' }}
+      shell: bash
+      working-directory: ${{ github.workspace }}/build
+      run: cmake --build .
+
+    - name: Build (Multi-config Generator)
+      if: ${{ runner.os == 'Windows' }}
+      shell: bash
+      working-directory: ${{ github.workspace }}/build
+      run: cmake --build . --config "${CONFIGURATION}"

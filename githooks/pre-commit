@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Allow manual skip
+if [[ "${SKIP_SUBMODULE_CHECK:-0}" == "1" ]]; then
+  echo "[SUBMODULE] Skip by SKIP_SUBMODULE_CHECK=1"
+  exit 0
+fi
+
+# Skip if no submodules
+if [[ ! -f .gitmodules ]] || ! grep -q 'path *= *' .gitmodules; then
+  echo "[SUBMODULE] No submodules. Skip."
+  exit 0
+fi
+
+echo "[pre-commit] Checking git submodules..."
+
+# 1) Must be initialized and at recorded commit
+status_output="$(git submodule status --recursive || true)"
+if echo "$status_output" | grep -E '^[+-U]'; then
+  echo "ERROR: Some submodules are uninitialized or not at recorded commit:"
+  echo "$status_output"
+  echo "Hint: git submodule update --init --recursive"
+  exit 1
+fi
+
+# 2) Must be clean (no local changes, including untracked)
+git submodule foreach --recursive '
+  set -e
+  if [[ -n "$(git status --porcelain)" ]]; then
+    echo "ERROR: Local changes in $name at $path"
+    git status --porcelain
+    exit 1
+  fi
+'
+
+# 3) Optional: remote existence check (enable via CHECK_REMOTE=1)
+#    This one should be used in CI
+if [[ "${CHECK_REMOTE:-0}" == "1" ]]; then
+  git submodule foreach --recursive '
+    set -e
+    # Make sure remote refs are up to date in CI
+    git fetch --all --prune >/dev/null 2>&1 || true
+    cnt=$(git rev-list --count --no-walk HEAD --not --remotes || echo 0)
+    if [[ "$cnt" != "0" ]]; then
+      echo "ERROR: Commit of $name at $path not present on any remote"
+      exit 1
+    fi
+  '
+fi
+
+echo "[SUBMODULE] OK"

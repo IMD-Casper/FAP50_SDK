@@ -1,0 +1,26 @@
+ jpegb_decode_mem - Decodes a datastream of JPEGB compressed bytes
+                    from a memory buffer, returning a lossy
+                    reconstructed pixmap.
+ jpegb_decode_file - Decodes a datastream of JPEGB compressed bytes
+                    from an open file, returning a lossy
+                    reconstructed pixmap.
+ jpegb_encode_mem - JPEGB encodes image data storing the compressed
+                    bytes to a memory buffer.
+ jpegb_encode_file - JPEGB encodes image data storing the compressed
+                    bytes to an open file.
+ read_marker_jpegb - Reads a specified JPEG marker from
+                     an open file.
+ getc_marker_jpegb - Reads a specified JPEG marker from a
+                     memory buffer.
+ put_nistcom_jpegb - Inserts a NISTCOM comment into a JPEGB datastream.
+ read_nistcom_jpegb - Reads the first NISTCOM comment from an
+                     open JPEGB file.
+ getc_nistcom_jpegb - Reads the first NISTCOM comment from a
+                     memory buffer containing a JPEGB datastream.
+ jpeg_membuf_dest - JPEGB destination manager designed to write
+                    compression results to a memory buffer.
+ jpeg_membuf_src - JPEGB source manager designed to read compressed
+                    data from a memory buffer.
+ get_ppi_jpegb - If possible, computes and returns the scan resolution
+                 in pixels per inch of a JPEGB datastream given a
+                 JPEGB decompess structure.

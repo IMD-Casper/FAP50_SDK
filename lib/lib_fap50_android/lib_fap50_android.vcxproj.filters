@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="lib_fap50_android.cpp" />
+    <ClCompile Include="..\lib_fap50_windows\IMDFap50Method.cpp" />
+    <ClCompile Include="..\lib_fap50_windows\IMDFPSApi.cpp" />
+    <ClCompile Include="..\lib_fap50_windows\IMDFTTestMethodClass.cpp" />
+    <ClCompile Include="..\lib_fap50_windows\SensorDevice.cpp" />
+    <ClCompile Include="..\lib_fap50_windows\IMDFAP50Plus_SDK_Panel.cpp" />
+    <ClCompile Include="..\lib_fap50_windows\test_ptn.cpp" />
+    <ClCompile Include="..\lib_fap50_windows\pen_mdoule_tw_LP_5_libusb.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lib_fap50_android.h" />
+    <ClInclude Include="..\lib_fap50_windows\pen_mdoule_interface.h" />
+    <ClInclude Include="..\lib_fap50_windows\UsbDevDefine.h" />
+  </ItemGroup>
+</Project>

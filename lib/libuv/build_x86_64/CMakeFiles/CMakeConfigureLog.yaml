@@ -1,0 +1,993 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      The target system is: Android - 1 - x86_64
+      The host system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe 
+      Build flags: -g;-DANDROID;-fdata-sections;-ffunction-sections;-funwind-tables;-fstack-protector-strong;-no-canonical-prefixes;-D_FORTIFY_SOURCE=2;-Wformat;-Werror=format-security
+      Id flags: -c;--target=x86_64-none-linux-android30 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is Clang, found in:
+        C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/3.30.5-msvc23/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-m6cjrk"
+      binary: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-m6cjrk"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-30"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-m6cjrk'
+        
+        Run Build Command(s): C:/ninja/ninja.exe -v cmTC_56451
+        [1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_56451.dir/CMakeCCompilerABI.c.o -MF CMakeFiles\\cmTC_56451.dir\\CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_56451.dir/CMakeCCompilerABI.c.o -c "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeCCompilerABI.c"
+        Android (8481493, based on r416183c2) clang version 12.0.9 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee)
+        Target: x86_64-none-linux-android30
+        Thread model: posix
+        InstalledDir: C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin
+        Found candidate GCC installation: C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android\\4.9.x
+        Found candidate GCC installation: C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android\\4.9.x
+        Selected GCC installation: C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android/4.9.x
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\bin\\\\clang.exe" -cc1 -triple x86_64-none-linux-android30 -emit-obj -mrelax-all --mrelax-relocations -mnoexecstack -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -target-feature +sse4.2 -target-feature +popcnt -target-feature +cx16 -tune-cpu generic -fno-split-dwarf-inlining -debug-info-kind=limited -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -resource-dir "C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\lib64\\\\clang\\\\12.0.9" -dependency-file "CMakeFiles\\\\cmTC_56451.dir\\\\CMakeCCompilerABI.c.o.d" -MT CMakeFiles/cmTC_56451.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -internal-isystem "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include" -internal-isystem "C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\lib64\\\\clang\\\\12.0.9\\\\include" -internal-externc-isystem "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/x86_64-linux-android" -internal-externc-isystem "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include" -internal-externc-isystem "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include" -Wformat -fdebug-compilation-dir "C:\\\\Users\\\\juan\\\\Documents\\\\IMD\\\\SDK\\\\Windows\\\\FAP50Plus_SDK_Panel\\\\libs\\\\libuv\\\\build_android\\\\build_x86_64\\\\CMakeFiles\\\\CMakeScratch\\\\TryCompile-m6cjrk" -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -o CMakeFiles/cmTC_56451.dir/CMakeCCompilerABI.c.o -x c "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeCCompilerABI.c"
+        clang -cc1 version 12.0.9 based upon LLVM 12.0.9git default target x86_64-w64-windows-gnu
+        ignoring nonexistent directory "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include
+         C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\lib64\\clang\\12.0.9\\include\x0d
+         C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/x86_64-linux-android\x0d
+         C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\x0d
+        End of search list.\x0d
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections  -v CMakeFiles/cmTC_56451.dir/CMakeCCompilerABI.c.o -o cmTC_56451   && cd ."
+        Android (8481493, based on r416183c2) clang version 12.0.9 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee)
+        Target: x86_64-none-linux-android30
+        Thread model: posix
+        InstalledDir: C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin
+        Found candidate GCC installation: C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android\\4.9.x
+        Found candidate GCC installation: C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android\\4.9.x
+        Selected GCC installation: C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android/4.9.x
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\bin\\\\ld" "--sysroot=C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -pie -z noexecstack --warn-shared-textrel -z now -z relro --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_56451 "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30\\\\crtbegin_dynamic.o" "-LC:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\lib64\\\\clang\\\\12.0.9\\\\lib\\\\linux\\\\x86_64" "-LC:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android/4.9.x" "-LC:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30" "-LC:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android" "-LC:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib" --build-id=sha1 --fatal-warnings --no-undefined --gc-sections CMakeFiles/cmTC_56451.dir/CMakeCCompilerABI.c.o "C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\lib64\\\\clang\\\\12.0.9\\\\lib\\\\linux\\\\libclang_rt.builtins-x86_64-android.a" -l:libunwind.a -ldl -lc "C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\lib64\\\\clang\\\\12.0.9\\\\lib\\\\linux\\\\libclang_rt.builtins-x86_64-android.a" -l:libunwind.a -ldl "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30\\\\crtend_android.o"\x0d
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include]
+          add: [C:/PROGRA~2/Android/ANDROI~2/ANDROI~1/TOOLCH~1/llvm/prebuilt/WINDOW~1/lib64/clang/12.0.9/include]
+          add: [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/x86_64-linux-android]
+          add: [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include]
+        end of search list found
+        collapse include dir [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include] ==> [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include]
+        collapse include dir [C:/PROGRA~2/Android/ANDROI~2/ANDROI~1/TOOLCH~1/llvm/prebuilt/WINDOW~1/lib64/clang/12.0.9/include] ==> [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/12.0.9/include]
+        collapse include dir [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/x86_64-linux-android] ==> [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/x86_64-linux-android]
+        collapse include dir [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include] ==> [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include]
+        implicit include dirs: [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include;C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/12.0.9/include;C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/x86_64-linux-android;C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-m6cjrk']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/ninja/ninja.exe -v cmTC_56451]
+        ignore line: [[1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_56451.dir/CMakeCCompilerABI.c.o -MF CMakeFiles\\cmTC_56451.dir\\CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_56451.dir/CMakeCCompilerABI.c.o -c "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeCCompilerABI.c"]
+        ignore line: [Android (8481493  based on r416183c2) clang version 12.0.9 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee)]
+        ignore line: [Target: x86_64-none-linux-android30]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin]
+        ignore line: [Found candidate GCC installation: C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android\\4.9.x]
+        ignore line: [Found candidate GCC installation: C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android\\4.9.x]
+        ignore line: [Selected GCC installation: C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\bin\\\\clang.exe" -cc1 -triple x86_64-none-linux-android30 -emit-obj -mrelax-all --mrelax-relocations -mnoexecstack -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -target-feature +sse4.2 -target-feature +popcnt -target-feature +cx16 -tune-cpu generic -fno-split-dwarf-inlining -debug-info-kind=limited -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -resource-dir "C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\lib64\\\\clang\\\\12.0.9" -dependency-file "CMakeFiles\\\\cmTC_56451.dir\\\\CMakeCCompilerABI.c.o.d" -MT CMakeFiles/cmTC_56451.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -internal-isystem "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include" -internal-isystem "C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\lib64\\\\clang\\\\12.0.9\\\\include" -internal-externc-isystem "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/x86_64-linux-android" -internal-externc-isystem "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include" -internal-externc-isystem "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include" -Wformat -fdebug-compilation-dir "C:\\\\Users\\\\juan\\\\Documents\\\\IMD\\\\SDK\\\\Windows\\\\FAP50Plus_SDK_Panel\\\\libs\\\\libuv\\\\build_android\\\\build_x86_64\\\\CMakeFiles\\\\CMakeScratch\\\\TryCompile-m6cjrk" -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -o CMakeFiles/cmTC_56451.dir/CMakeCCompilerABI.c.o -x c "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeCCompilerABI.c"]
+        ignore line: [clang -cc1 version 12.0.9 based upon LLVM 12.0.9git default target x86_64-w64-windows-gnu]
+        ignore line: [ignoring nonexistent directory "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include]
+        ignore line: [ C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\lib64\\clang\\12.0.9\\include\x0d]
+        ignore line: [ C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/x86_64-linux-android\x0d]
+        ignore line: [ C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\x0d]
+        ignore line: [End of search list.\x0d]
+        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -static-libstdc++ -Wl --build-id=sha1 -Wl --fatal-warnings -Wl --no-undefined -Qunused-arguments -Wl --gc-sections  -v CMakeFiles/cmTC_56451.dir/CMakeCCompilerABI.c.o -o cmTC_56451   && cd ."]
+        ignore line: [Android (8481493  based on r416183c2) clang version 12.0.9 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee)]
+        ignore line: [Target: x86_64-none-linux-android30]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin]
+        ignore line: [Found candidate GCC installation: C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android\\4.9.x]
+        ignore line: [Found candidate GCC installation: C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android\\4.9.x]
+        ignore line: [Selected GCC installation: C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\bin\\\\ld" "--sysroot=C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -pie -z noexecstack --warn-shared-textrel -z now -z relro --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_56451 "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30\\\\crtbegin_dynamic.o" "-LC:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\lib64\\\\clang\\\\12.0.9\\\\lib\\\\linux\\\\x86_64" "-LC:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android/4.9.x" "-LC:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30" "-LC:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android" "-LC:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib" --build-id=sha1 --fatal-warnings --no-undefined --gc-sections CMakeFiles/cmTC_56451.dir/CMakeCCompilerABI.c.o "C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\lib64\\\\clang\\\\12.0.9\\\\lib\\\\linux\\\\libclang_rt.builtins-x86_64-android.a" -l:libunwind.a -ldl -lc "C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\lib64\\\\clang\\\\12.0.9\\\\lib\\\\linux\\\\libclang_rt.builtins-x86_64-android.a" -l:libunwind.a -ldl "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30\\\\crtend_android.o"\x0d]
+          arg [C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\bin\\\\ld] ==> ignore
+          arg [--sysroot=C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znoexecstack] ==> ignore
+          arg [--warn-shared-textrel] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--enable-new-dtags] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/system/bin/linker64] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_56451] ==> ignore
+          arg [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30\\\\crtbegin_dynamic.o] ==> obj [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30\\\\crtbegin_dynamic.o]
+          arg [-LC:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\lib64\\\\clang\\\\12.0.9\\\\lib\\\\linux\\\\x86_64] ==> dir [C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\lib64\\\\clang\\\\12.0.9\\\\lib\\\\linux\\\\x86_64]
+          arg [-LC:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android/4.9.x] ==> dir [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
+          arg [-LC:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30] ==> dir [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30]
+          arg [-LC:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android] ==> dir [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android]
+          arg [-LC:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib] ==> dir [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib]
+          arg [--build-id=sha1] ==> ignore
+          arg [--fatal-warnings] ==> ignore
+          arg [--no-undefined] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [CMakeFiles/cmTC_56451.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\lib64\\\\clang\\\\12.0.9\\\\lib\\\\linux\\\\libclang_rt.builtins-x86_64-android.a] ==> lib [C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\lib64\\\\clang\\\\12.0.9\\\\lib\\\\linux\\\\libclang_rt.builtins-x86_64-android.a]
+          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+          arg [-ldl] ==> lib [dl]
+          arg [-lc] ==> lib [c]
+          arg [C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\lib64\\\\clang\\\\12.0.9\\\\lib\\\\linux\\\\libclang_rt.builtins-x86_64-android.a] ==> lib [C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\lib64\\\\clang\\\\12.0.9\\\\lib\\\\linux\\\\libclang_rt.builtins-x86_64-android.a]
+          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+          arg [-ldl] ==> lib [dl]
+          arg [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30\\\\crtend_android.o] ==> obj [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30\\\\crtend_android.o]
+        linker tool for 'C': C:/PROGRA~2/Android/ANDROI~2/ANDROI~1/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin/ld
+        remove lib [C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\lib64\\\\clang\\\\12.0.9\\\\lib\\\\linux\\\\libclang_rt.builtins-x86_64-android.a]
+        remove lib [C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\lib64\\\\clang\\\\12.0.9\\\\lib\\\\linux\\\\libclang_rt.builtins-x86_64-android.a]
+        collapse obj [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30\\\\crtbegin_dynamic.o] ==> [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30/crtbegin_dynamic.o]
+        collapse obj [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30\\\\crtend_android.o] ==> [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30/crtend_android.o]
+        collapse library dir [C:\\\\PROGRA~2\\\\Android\\\\ANDROI~2\\\\ANDROI~1\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\lib64\\\\clang\\\\12.0.9\\\\lib\\\\linux\\\\x86_64] ==> [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/12.0.9/lib/linux/x86_64]
+        collapse library dir [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android/4.9.x] ==> [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
+        collapse library dir [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30] ==> [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30]
+        collapse library dir [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android] ==> [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android]
+        collapse library dir [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib] ==> [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib]
+        implicit libs: [-l:libunwind.a;dl;c;-l:libunwind.a;dl]
+        implicit objs: [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30/crtbegin_dynamic.o;C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30/crtend_android.o]
+        implicit dirs: [C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/12.0.9/lib/linux/x86_64;C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android/4.9.x;C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/30;C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android;C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Running the C compiler's linker: "C:/PROGRA~2/Android/ANDROI~2/ANDROI~1/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin/ld" "-v"
+      LLD 12.0.9 (/buildbot/src/android/llvm-r416183/out/llvm-project/lld c935d99d7cf2016289302412d708641d52d2f7ee) (compatible with GNU linkers)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:107 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_W4"
+    directories:
+      source: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-anr6cy"
+      binary: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-anr6cy"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-30"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+    buildResult:
+      variable: "UV_LINT_W4"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-anr6cy'
+        
+        Run Build Command(s): C:/ninja/ninja.exe -v cmTC_762e1
+        [1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_W4  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /W4 -MD -MT CMakeFiles/cmTC_762e1.dir/src.c.o -MF CMakeFiles\\cmTC_762e1.dir\\src.c.o.d -o CMakeFiles/cmTC_762e1.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-anr6cy/src.c
+        FAILED: CMakeFiles/cmTC_762e1.dir/src.c.o 
+        C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_W4  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /W4 -MD -MT CMakeFiles/cmTC_762e1.dir/src.c.o -MF CMakeFiles\\cmTC_762e1.dir\\src.c.o.d -o CMakeFiles/cmTC_762e1.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-anr6cy/src.c
+        clang: error: no such file or directory: '/W4'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:108 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_UNUSED_PARAMETER_MSVC"
+    directories:
+      source: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-x9pbvq"
+      binary: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-x9pbvq"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-30"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+    buildResult:
+      variable: "UV_LINT_NO_UNUSED_PARAMETER_MSVC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-x9pbvq'
+        
+        Run Build Command(s): C:/ninja/ninja.exe -v cmTC_e8da6
+        [1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_UNUSED_PARAMETER_MSVC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4100 -MD -MT CMakeFiles/cmTC_e8da6.dir/src.c.o -MF CMakeFiles\\cmTC_e8da6.dir\\src.c.o.d -o CMakeFiles/cmTC_e8da6.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-x9pbvq/src.c
+        FAILED: CMakeFiles/cmTC_e8da6.dir/src.c.o 
+        C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_UNUSED_PARAMETER_MSVC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4100 -MD -MT CMakeFiles/cmTC_e8da6.dir/src.c.o -MF CMakeFiles\\cmTC_e8da6.dir\\src.c.o.d -o CMakeFiles/cmTC_e8da6.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-x9pbvq/src.c
+        clang: error: no such file or directory: '/wd4100'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:109 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_CONDITIONAL_CONSTANT_MSVC"
+    directories:
+      source: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-k9syid"
+      binary: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-k9syid"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-30"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+    buildResult:
+      variable: "UV_LINT_NO_CONDITIONAL_CONSTANT_MSVC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-k9syid'
+        
+        Run Build Command(s): C:/ninja/ninja.exe -v cmTC_a8a19
+        [1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_CONDITIONAL_CONSTANT_MSVC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4127 -MD -MT CMakeFiles/cmTC_a8a19.dir/src.c.o -MF CMakeFiles\\cmTC_a8a19.dir\\src.c.o.d -o CMakeFiles/cmTC_a8a19.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-k9syid/src.c
+        FAILED: CMakeFiles/cmTC_a8a19.dir/src.c.o 
+        C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_CONDITIONAL_CONSTANT_MSVC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4127 -MD -MT CMakeFiles/cmTC_a8a19.dir/src.c.o -MF CMakeFiles\\cmTC_a8a19.dir\\src.c.o.d -o CMakeFiles/cmTC_a8a19.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-k9syid/src.c
+        clang: error: no such file or directory: '/wd4127'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:110 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_NONSTANDARD_MSVC"
+    directories:
+      source: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-obrmu3"
+      binary: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-obrmu3"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-30"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+    buildResult:
+      variable: "UV_LINT_NO_NONSTANDARD_MSVC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-obrmu3'
+        
+        Run Build Command(s): C:/ninja/ninja.exe -v cmTC_186d6
+        [1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_NONSTANDARD_MSVC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4201 -MD -MT CMakeFiles/cmTC_186d6.dir/src.c.o -MF CMakeFiles\\cmTC_186d6.dir\\src.c.o.d -o CMakeFiles/cmTC_186d6.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-obrmu3/src.c
+        FAILED: CMakeFiles/cmTC_186d6.dir/src.c.o 
+        C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_NONSTANDARD_MSVC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4201 -MD -MT CMakeFiles/cmTC_186d6.dir/src.c.o -MF CMakeFiles\\cmTC_186d6.dir\\src.c.o.d -o CMakeFiles/cmTC_186d6.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-obrmu3/src.c
+        clang: error: no such file or directory: '/wd4201'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:111 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_NONSTANDARD_EMPTY_TU_MSVC"
+    directories:
+      source: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-afaxdu"
+      binary: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-afaxdu"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-30"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+    buildResult:
+      variable: "UV_LINT_NO_NONSTANDARD_EMPTY_TU_MSVC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-afaxdu'
+        
+        Run Build Command(s): C:/ninja/ninja.exe -v cmTC_e21ac
+        [1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_NONSTANDARD_EMPTY_TU_MSVC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4206 -MD -MT CMakeFiles/cmTC_e21ac.dir/src.c.o -MF CMakeFiles\\cmTC_e21ac.dir\\src.c.o.d -o CMakeFiles/cmTC_e21ac.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-afaxdu/src.c
+        FAILED: CMakeFiles/cmTC_e21ac.dir/src.c.o 
+        C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_NONSTANDARD_EMPTY_TU_MSVC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4206 -MD -MT CMakeFiles/cmTC_e21ac.dir/src.c.o -MF CMakeFiles\\cmTC_e21ac.dir\\src.c.o.d -o CMakeFiles/cmTC_e21ac.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-afaxdu/src.c
+        clang: error: no such file or directory: '/wd4206'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:112 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_NONSTANDARD_FILE_SCOPE_MSVC"
+    directories:
+      source: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-djglhb"
+      binary: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-djglhb"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-30"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+    buildResult:
+      variable: "UV_LINT_NO_NONSTANDARD_FILE_SCOPE_MSVC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-djglhb'
+        
+        Run Build Command(s): C:/ninja/ninja.exe -v cmTC_1d28f
+        [1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_NONSTANDARD_FILE_SCOPE_MSVC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4210 -MD -MT CMakeFiles/cmTC_1d28f.dir/src.c.o -MF CMakeFiles\\cmTC_1d28f.dir\\src.c.o.d -o CMakeFiles/cmTC_1d28f.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-djglhb/src.c
+        FAILED: CMakeFiles/cmTC_1d28f.dir/src.c.o 
+        C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_NONSTANDARD_FILE_SCOPE_MSVC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4210 -MD -MT CMakeFiles/cmTC_1d28f.dir/src.c.o -MF CMakeFiles\\cmTC_1d28f.dir\\src.c.o.d -o CMakeFiles/cmTC_1d28f.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-djglhb/src.c
+        clang: error: no such file or directory: '/wd4210'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:113 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_NONSTANDARD_NONSTATIC_DLIMPORT_MSVC"
+    directories:
+      source: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-uj6szu"
+      binary: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-uj6szu"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-30"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+    buildResult:
+      variable: "UV_LINT_NO_NONSTANDARD_NONSTATIC_DLIMPORT_MSVC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-uj6szu'
+        
+        Run Build Command(s): C:/ninja/ninja.exe -v cmTC_54483
+        [1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_NONSTANDARD_NONSTATIC_DLIMPORT_MSVC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4232 -MD -MT CMakeFiles/cmTC_54483.dir/src.c.o -MF CMakeFiles\\cmTC_54483.dir\\src.c.o.d -o CMakeFiles/cmTC_54483.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-uj6szu/src.c
+        FAILED: CMakeFiles/cmTC_54483.dir/src.c.o 
+        C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_NONSTANDARD_NONSTATIC_DLIMPORT_MSVC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4232 -MD -MT CMakeFiles/cmTC_54483.dir/src.c.o -MF CMakeFiles\\cmTC_54483.dir\\src.c.o.d -o CMakeFiles/cmTC_54483.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-uj6szu/src.c
+        clang: error: no such file or directory: '/wd4232'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:114 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_HIDES_LOCAL"
+    directories:
+      source: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-gmgwc5"
+      binary: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-gmgwc5"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-30"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+    buildResult:
+      variable: "UV_LINT_NO_HIDES_LOCAL"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-gmgwc5'
+        
+        Run Build Command(s): C:/ninja/ninja.exe -v cmTC_418ce
+        [1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_HIDES_LOCAL  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4456 -MD -MT CMakeFiles/cmTC_418ce.dir/src.c.o -MF CMakeFiles\\cmTC_418ce.dir\\src.c.o.d -o CMakeFiles/cmTC_418ce.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-gmgwc5/src.c
+        FAILED: CMakeFiles/cmTC_418ce.dir/src.c.o 
+        C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_HIDES_LOCAL  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4456 -MD -MT CMakeFiles/cmTC_418ce.dir/src.c.o -MF CMakeFiles\\cmTC_418ce.dir\\src.c.o.d -o CMakeFiles/cmTC_418ce.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-gmgwc5/src.c
+        clang: error: no such file or directory: '/wd4456'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:115 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_HIDES_PARAM"
+    directories:
+      source: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-k2rpz2"
+      binary: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-k2rpz2"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-30"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+    buildResult:
+      variable: "UV_LINT_NO_HIDES_PARAM"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-k2rpz2'
+        
+        Run Build Command(s): C:/ninja/ninja.exe -v cmTC_b1efa
+        [1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_HIDES_PARAM  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4457 -MD -MT CMakeFiles/cmTC_b1efa.dir/src.c.o -MF CMakeFiles\\cmTC_b1efa.dir\\src.c.o.d -o CMakeFiles/cmTC_b1efa.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-k2rpz2/src.c
+        FAILED: CMakeFiles/cmTC_b1efa.dir/src.c.o 
+        C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_HIDES_PARAM  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4457 -MD -MT CMakeFiles/cmTC_b1efa.dir/src.c.o -MF CMakeFiles\\cmTC_b1efa.dir\\src.c.o.d -o CMakeFiles/cmTC_b1efa.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-k2rpz2/src.c
+        clang: error: no such file or directory: '/wd4457'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:116 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_HIDES_GLOBAL"
+    directories:
+      source: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-w3t5dw"
+      binary: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-w3t5dw"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-30"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+    buildResult:
+      variable: "UV_LINT_NO_HIDES_GLOBAL"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-w3t5dw'
+        
+        Run Build Command(s): C:/ninja/ninja.exe -v cmTC_62461
+        [1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_HIDES_GLOBAL  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4459 -MD -MT CMakeFiles/cmTC_62461.dir/src.c.o -MF CMakeFiles\\cmTC_62461.dir\\src.c.o.d -o CMakeFiles/cmTC_62461.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-w3t5dw/src.c
+        FAILED: CMakeFiles/cmTC_62461.dir/src.c.o 
+        C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_HIDES_GLOBAL  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4459 -MD -MT CMakeFiles/cmTC_62461.dir/src.c.o -MF CMakeFiles\\cmTC_62461.dir\\src.c.o.d -o CMakeFiles/cmTC_62461.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-w3t5dw/src.c
+        clang: error: no such file or directory: '/wd4459'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:117 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_CONDITIONAL_ASSIGNMENT_MSVC"
+    directories:
+      source: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-vtulu3"
+      binary: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-vtulu3"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-30"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+    buildResult:
+      variable: "UV_LINT_NO_CONDITIONAL_ASSIGNMENT_MSVC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-vtulu3'
+        
+        Run Build Command(s): C:/ninja/ninja.exe -v cmTC_25494
+        [1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_CONDITIONAL_ASSIGNMENT_MSVC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4706 -MD -MT CMakeFiles/cmTC_25494.dir/src.c.o -MF CMakeFiles\\cmTC_25494.dir\\src.c.o.d -o CMakeFiles/cmTC_25494.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-vtulu3/src.c
+        FAILED: CMakeFiles/cmTC_25494.dir/src.c.o 
+        C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_CONDITIONAL_ASSIGNMENT_MSVC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4706 -MD -MT CMakeFiles/cmTC_25494.dir/src.c.o -MF CMakeFiles\\cmTC_25494.dir\\src.c.o.d -o CMakeFiles/cmTC_25494.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-vtulu3/src.c
+        clang: error: no such file or directory: '/wd4706'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:118 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_UNSAFE_MSVC"
+    directories:
+      source: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-wd3kum"
+      binary: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-wd3kum"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-30"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+    buildResult:
+      variable: "UV_LINT_NO_UNSAFE_MSVC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-wd3kum'
+        
+        Run Build Command(s): C:/ninja/ninja.exe -v cmTC_81ebd
+        [1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_UNSAFE_MSVC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4996 -MD -MT CMakeFiles/cmTC_81ebd.dir/src.c.o -MF CMakeFiles\\cmTC_81ebd.dir\\src.c.o.d -o CMakeFiles/cmTC_81ebd.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-wd3kum/src.c
+        FAILED: CMakeFiles/cmTC_81ebd.dir/src.c.o 
+        C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_UNSAFE_MSVC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /wd4996 -MD -MT CMakeFiles/cmTC_81ebd.dir/src.c.o -MF CMakeFiles\\cmTC_81ebd.dir\\src.c.o.d -o CMakeFiles/cmTC_81ebd.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-wd3kum/src.c
+        clang: error: no such file or directory: '/wd4996'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:120 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_WALL"
+    directories:
+      source: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-2ar7yf"
+      binary: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-2ar7yf"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-30"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+    buildResult:
+      variable: "UV_LINT_WALL"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-2ar7yf'
+        
+        Run Build Command(s): C:/ninja/ninja.exe -v cmTC_8bb26
+        [1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_WALL  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   -Wall -MD -MT CMakeFiles/cmTC_8bb26.dir/src.c.o -MF CMakeFiles\\cmTC_8bb26.dir\\src.c.o.d -o CMakeFiles/cmTC_8bb26.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-2ar7yf/src.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections CMakeFiles/cmTC_8bb26.dir/src.c.o -o cmTC_8bb26  -latomic -lm && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:123 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_UNUSED_PARAMETER"
+    directories:
+      source: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-cuewhb"
+      binary: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-cuewhb"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-30"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+    buildResult:
+      variable: "UV_LINT_NO_UNUSED_PARAMETER"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-cuewhb'
+        
+        Run Build Command(s): C:/ninja/ninja.exe -v cmTC_17676
+        [1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_NO_UNUSED_PARAMETER  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   -Wno-unused-parameter -MD -MT CMakeFiles/cmTC_17676.dir/src.c.o -MF CMakeFiles\\cmTC_17676.dir\\src.c.o.d -o CMakeFiles/cmTC_17676.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-cuewhb/src.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections CMakeFiles/cmTC_17676.dir/src.c.o -o cmTC_17676  -latomic -lm && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:124 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_STRICT_PROTOTYPES"
+    directories:
+      source: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-lbn7ki"
+      binary: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-lbn7ki"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-30"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+    buildResult:
+      variable: "UV_LINT_STRICT_PROTOTYPES"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-lbn7ki'
+        
+        Run Build Command(s): C:/ninja/ninja.exe -v cmTC_061b6
+        [1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_STRICT_PROTOTYPES  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   -Wstrict-prototypes -MD -MT CMakeFiles/cmTC_061b6.dir/src.c.o -MF CMakeFiles\\cmTC_061b6.dir\\src.c.o.d -o CMakeFiles/cmTC_061b6.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-lbn7ki/src.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections CMakeFiles/cmTC_061b6.dir/src.c.o -o cmTC_061b6  -latomic -lm && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:125 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_EXTRA"
+    directories:
+      source: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-4yyz1a"
+      binary: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-4yyz1a"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-30"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+    buildResult:
+      variable: "UV_LINT_EXTRA"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-4yyz1a'
+        
+        Run Build Command(s): C:/ninja/ninja.exe -v cmTC_61ba4
+        [1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_EXTRA  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   -Wextra -MD -MT CMakeFiles/cmTC_61ba4.dir/src.c.o -MF CMakeFiles\\cmTC_61ba4.dir\\src.c.o.d -o CMakeFiles/cmTC_61ba4.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-4yyz1a/src.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections CMakeFiles/cmTC_61ba4.dir/src.c.o -o cmTC_61ba4  -latomic -lm && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:127 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_UTF8_MSVC"
+    directories:
+      source: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-238u6m"
+      binary: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-238u6m"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-30"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+    buildResult:
+      variable: "UV_LINT_UTF8_MSVC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-238u6m'
+        
+        Run Build Command(s): C:/ninja/ninja.exe -v cmTC_5281f
+        [1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_UTF8_MSVC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /utf-8 -MD -MT CMakeFiles/cmTC_5281f.dir/src.c.o -MF CMakeFiles\\cmTC_5281f.dir\\src.c.o.d -o CMakeFiles/cmTC_5281f.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-238u6m/src.c
+        FAILED: CMakeFiles/cmTC_5281f.dir/src.c.o 
+        C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_LINT_UTF8_MSVC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   /utf-8 -MD -MT CMakeFiles/cmTC_5281f.dir/src.c.o -MF CMakeFiles\\cmTC_5281f.dir\\src.c.o.d -o CMakeFiles/cmTC_5281f.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-238u6m/src.c
+        clang: error: no such file or directory: '/utf-8'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:166 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_F_STRICT_ALIASING"
+    directories:
+      source: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-cptj83"
+      binary: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-cptj83"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-30"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android30"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+    buildResult:
+      variable: "UV_F_STRICT_ALIASING"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-cptj83'
+        
+        Run Build Command(s): C:/ninja/ninja.exe -v cmTC_6a317
+        [1/2] C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -DUV_F_STRICT_ALIASING  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu90 -fPIE   -fno-strict-aliasing -MD -MT CMakeFiles/cmTC_6a317.dir/src.c.o -MF CMakeFiles\\cmTC_6a317.dir\\src.c.o.d -o CMakeFiles/cmTC_6a317.dir/src.c.o -c C:/Users/juan/Documents/IMD/SDK/Windows/FAP50Plus_SDK_Panel/libs/libuv/build_android/build_x86_64/CMakeFiles/CMakeScratch/TryCompile-cptj83/src.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\Android\\ANDROI~2\\ANDROI~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android30 --gcc-toolchain="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64" --sysroot="C:/Program Files (x86)/Android/AndroidNDK/android-ndk-r23c/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections CMakeFiles/cmTC_6a317.dir/src.c.o -o cmTC_6a317  -latomic -lm && cd ."
+        
+      exitCode: 0
+...
